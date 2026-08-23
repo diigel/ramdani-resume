@@ -6,7 +6,10 @@ import { certifications } from "@/lib/content";
 export default function Certifications() {
 	if (certifications.length === 0) return null;
 	return (
-		<section id="certifications" className="mx-auto max-w-content px-6 py-20 md:py-28">
+		<section
+			id="certifications"
+			className="mx-auto max-w-content px-6 py-20 md:py-28"
+		>
 			<div className="mb-12">
 				<span className="section-label">04 · Credentials</span>
 				<h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">
@@ -36,7 +39,9 @@ export default function Certifications() {
 							<p className="text-sm text-muted mt-0.5">{c.issuer}</p>
 							<p className="text-xs font-mono text-muted mt-1">{c.year}</p>
 						</div>
-						{c.url && <ExternalLink className="h-4 w-4 text-muted flex-shrink-0" />}
+						{c.url && (
+							<ExternalLink className="h-4 w-4 text-muted flex-shrink-0" />
+						)}
 					</motion.a>
 				))}
 			</div>

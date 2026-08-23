@@ -203,13 +203,14 @@ export const projects: Project[] = [
 	{
 		slug: "langitpay-absensi",
 		title: "Langitpay Absensi",
-		tagline: "Field-agent attendance app with geo-tagging & offline sync.",
-		tech: ["Kotlin", "Room", "WorkManager", "Google Location", "MVVM"],
+		tagline: "Android attendance app built as final-year thesis project at PT Langitpay Digital Indonesia.",
+		tech: ["Kotlin", "RxAndroid", "MVVM", "Retrofit", "Room", "Git"],
 		highlights: [
-			"Attendance tracking with geolocation validation for thousands of Langitpay field agents.",
-			"Offline-first sync using Room + WorkManager — attendance queued and posted when connectivity returns.",
-			"Shared modular core with Boss Bayar ecosystem for consistent UX and reduced duplication.",
+			"Employee attendance Android app developed on the Langitpay platform for thesis (Sep – Dec 2021).",
+			"Built entirely in Kotlin following MVVM and reactive patterns with RxAndroid.",
+			"Full source code published on GitHub as portfolio evidence.",
 		],
+		githubUrl: "https://github.com/diigel/LangitPayAbsensi-ANDROID",
 	},
 	{
 		slug: "eureka",
@@ -283,17 +284,26 @@ export type Certification = {
 	name: string;
 	issuer: string;
 	year: string;
+	credentialId?: string;
 	url?: string;
 };
 
 export const certifications: Certification[] = [
 	{
-		name: "Android Basic Developer",
-		issuer: "Dicoding Indonesia",
-		year: "2021 – 2024",
+		name: "Build Your App with Android Kotlin",
+		issuer: "Phincon Academy",
+		year: "Mar 2024",
+		credentialId: "PA/FC/02/1803240002",
 	},
 	{
-		name: "SOLID Programming Principles",
+		name: "Belajar Prinsip Pemrograman SOLID",
+		issuer: "Dicoding Indonesia",
+		year: "Aug 2021 – Aug 2024",
+		credentialId: "JMZV23O4QZN9",
+		url: "https://www.dicoding.com/certificates/JMZV23O4QZN9",
+	},
+	{
+		name: "Android Basic Developer",
 		issuer: "Dicoding Indonesia",
 		year: "2021 – 2024",
 	},
@@ -307,6 +317,22 @@ export type Recommendation = {
 };
 
 export const recommendations: Recommendation[] = [
-	// Paste from LinkedIn — example shape:
-	// { name: "Jane Doe", role: "Engineering Manager @ Company", quote: "..." },
+	{
+		name: "Utsman Muhammad",
+		role: "Software Engineer & Instructor — managed Muhammad directly",
+		quote:
+			"I had the pleasure of working closely with Mas Dhani on several Android projects, and I can confidently say that he is an exceptional Android developer. He possesses a deep understanding of Android development and adapts quickly to new technologies. What truly sets him apart is his unwavering determination and resilience — he never shies away from challenges, tackles problems head-on, and perseveres until he finds a solution. Despite his impressive skills, he remains humble and approachable, fostering a positive team dynamic. I wholeheartedly recommend him for any Android development role.",
+	},
+	{
+		name: "Mikkel Septiano",
+		role: "Engineering @ Financial & Health Care Tech — same team",
+		quote:
+			"Such a great experience working with Muhammad Ramdani. He had great critical thinking while solving many problems with best-practice closure. He also had great time management doing agile scrum with tasks from project management. I would recommend him as a Senior Mobile Android Engineer.",
+	},
+	{
+		name: "Muhammad Fahri Ramadhan",
+		role: "Android Developer — same team",
+		quote:
+			"Great personality and hard-working when collaborating and developing the Alteacare Android product.",
+	},
 ];

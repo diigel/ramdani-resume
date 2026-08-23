@@ -6,13 +6,18 @@ import { recommendations } from "@/lib/content";
 export default function Recommendations() {
 	if (recommendations.length === 0) return null;
 	return (
-		<section id="recommendations" className="mx-auto max-w-content px-6 py-20 md:py-28">
+		<section
+			id="recommendations"
+			className="mx-auto max-w-content px-6 py-20 md:py-28"
+		>
 			<div className="mb-12">
 				<span className="section-label">05 · Words</span>
 				<h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">
 					Recommendations
 				</h2>
-				<p className="mt-2 text-muted max-w-xl">From colleagues &amp; managers on LinkedIn.</p>
+				<p className="mt-2 text-muted max-w-xl">
+					From colleagues &amp; managers on LinkedIn.
+				</p>
 			</div>
 			<div className="grid gap-5 md:grid-cols-2">
 				{recommendations.map((r, i) => (
