@@ -203,7 +203,8 @@ export const projects: Project[] = [
 	{
 		slug: "langitpay-absensi",
 		title: "Langitpay Absensi",
-		tagline: "Android attendance app built as final-year thesis project at PT Langitpay Digital Indonesia.",
+		tagline:
+			"Android attendance app built as final-year thesis project at PT Langitpay Digital Indonesia.",
 		tech: ["Kotlin", "RxAndroid", "MVVM", "Retrofit", "Room", "Git"],
 		highlights: [
 			"Employee attendance Android app developed on the Langitpay platform for thesis (Sep – Dec 2021).",
@@ -242,23 +243,33 @@ export const projects: Project[] = [
 ];
 
 export const skills = {
-	Languages: ["Kotlin", "Java", "Dart (Flutter)"],
+	Languages: ["Kotlin", "Java", "Dart (Flutter)", "PHP", "C++", "MySQL"],
 	"Architecture & Patterns": [
 		"Clean Architecture",
 		"Modular Architecture",
 		"MVVM",
 		"MVI",
-		"SOLID",
+		"SOLID Design Principles",
+		"Design Patterns",
+		"Reactive Programming",
 	],
-	"Frameworks & Jetpack": [
+	"Android & Jetpack": [
 		"Android SDK",
+		"Android Jetpack",
 		"Jetpack Compose",
 		"ViewModel",
 		"LiveData",
 		"Navigation",
 		"Paging 3",
+		"Android Studio",
 	],
-	"Async & Reactive": ["Coroutines", "RxJava", "Flow"],
+	"Async & Reactive": [
+		"Kotlin Coroutines",
+		"Flow",
+		"RxJava",
+		"RxAndroid",
+		"RxKotlin",
+	],
 	"DI, Network & Storage": [
 		"Dagger/Hilt",
 		"Koin",
@@ -270,13 +281,18 @@ export const skills = {
 	"Hardware & IoT": [
 		"Bluetooth (BLE & Classic)",
 		"Telpo SDK",
+		"iMin SDK",
 		"ML Kit (LPR)",
 		"Vending Machine",
 	],
-	DevOps: [
-		"Git/GitHub",
+	"DevOps & Tooling": [
+		"Git",
+		"GitHub",
+		"GitLab",
+		"CI/CD",
 		"Firebase (Crashlytics, Analytics, FCM)",
 		"Play Store",
+		"Jira",
 	],
 };
 
