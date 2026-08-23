@@ -191,14 +191,24 @@ export const projects: Project[] = [
 	},
 	{
 		slug: "langitpay",
-		title: "Langitpay Ecosystem",
-		tagline:
-			"Boss Bayar PPOB, marketplace & attendance for thousands of field agents.",
+		title: "Langitpay — Boss Bayar",
+		tagline: "PPOB & marketplace serving thousands of active field agents.",
 		tech: ["Java", "Kotlin", "Room", "WorkManager", "FCM", "Retrofit"],
 		highlights: [
-			"Led design and Java → Kotlin modernization of high-traffic PPOB, marketplace, and attendance apps.",
+			"Led design and Java → Kotlin modernization of high-traffic PPOB & marketplace platform.",
 			"Robust offline-first sync with Room + WorkManager for low-connectivity transaction continuity.",
 			"FCM push notifications for real-time field-agent operations.",
+		],
+	},
+	{
+		slug: "langitpay-absensi",
+		title: "Langitpay Absensi",
+		tagline: "Field-agent attendance app with geo-tagging & offline sync.",
+		tech: ["Kotlin", "Room", "WorkManager", "Google Location", "MVVM"],
+		highlights: [
+			"Attendance tracking with geolocation validation for thousands of Langitpay field agents.",
+			"Offline-first sync using Room + WorkManager — attendance queued and posted when connectivity returns.",
+			"Shared modular core with Boss Bayar ecosystem for consistent UX and reduced duplication.",
 		],
 	},
 	{
@@ -268,3 +278,35 @@ export const skills = {
 		"Play Store",
 	],
 };
+
+export type Certification = {
+	name: string;
+	issuer: string;
+	year: string;
+	url?: string;
+};
+
+export const certifications: Certification[] = [
+	{
+		name: "Android Basic Developer",
+		issuer: "Dicoding Indonesia",
+		year: "2021 – 2024",
+	},
+	{
+		name: "SOLID Programming Principles",
+		issuer: "Dicoding Indonesia",
+		year: "2021 – 2024",
+	},
+];
+
+export type Recommendation = {
+	name: string;
+	role: string;
+	quote: string;
+	url?: string;
+};
+
+export const recommendations: Recommendation[] = [
+	// Paste from LinkedIn — example shape:
+	// { name: "Jane Doe", role: "Engineering Manager @ Company", quote: "..." },
+];
