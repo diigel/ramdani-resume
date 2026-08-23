@@ -38,6 +38,11 @@ export default function Certifications() {
 							</h3>
 							<p className="text-sm text-muted mt-0.5">{c.issuer}</p>
 							<p className="text-xs font-mono text-muted mt-1">{c.year}</p>
+							{c.credentialId && (
+								<p className="text-[10px] font-mono text-muted mt-1 truncate">
+									ID: {c.credentialId}
+								</p>
+							)}
 						</div>
 						{c.url && (
 							<ExternalLink className="h-4 w-4 text-muted flex-shrink-0" />
