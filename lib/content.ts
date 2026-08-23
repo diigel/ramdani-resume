@@ -78,6 +78,24 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
+		slug: "aku-mpos-vending",
+		title: "Aku MPOS Vending Machine",
+		tagline: "IoT vending machine integration — hardware control, cashless payment, live inventory.",
+		tech: [
+			"Kotlin",
+			"IoT / Vending SDK",
+			"Bluetooth",
+			"Coroutines",
+			"Clean Architecture",
+			"MVVM",
+		],
+		highlights: [
+			"Integrated vending machine hardware SDK to control slot dispensing, sensor telemetry, and cashless payment flows.",
+			"Built resilient state machine handling transaction, dispensing, and failure-recovery paths end-to-end.",
+			"Real-time stock sync + remote monitoring via REST + local IP network.",
+		],
+	},
+	{
 		slug: "aku-mpos-premium",
 		title: "Aku MPOS Premium",
 		tagline: "Mobile Point of Sale with Telpo & iMin hardware integration.",
@@ -156,14 +174,40 @@ export const projects: Project[] = [
 			"https://play.google.com/store/apps/details?id=com.dre.loyalty",
 	},
 	{
-		slug: "langitpay",
-		title: "Langitpay Aplikasi",
-		tagline: "PPOB + marketplace serving thousands of active field agents.",
-		tech: ["Java", "Kotlin", "Room", "WorkManager", "FCM"],
+		slug: "aku-mpos-umkm",
+		title: "Aku MPOS UMKM",
+		tagline: "Lightweight POS for small food-court merchants & UMKM.",
+		tech: ["Kotlin", "MVVM", "Clean Architecture", "Retrofit", "Room"],
 		highlights: [
-			"Led design and Java → Kotlin modernization of high-traffic PPOB & marketplace.",
-			"Robust offline-first sync with Room + WorkManager.",
-			"FCM push notifications for real-time field ops.",
+			"Streamlined POS optimized for foodcourt & UMKM operators with quick order entry and receipt printing.",
+			"Shared architecture with Aku MPOS Premium via Modular design for faster feature parity.",
+			"Play Store rollout with staged releases and Crashlytics-driven stability monitoring.",
+		],
+		image:
+			"https://play-lh.googleusercontent.com/rhdbNNuJ3rm3D3l2dbzg9uqTu1DjmiZIG-GSjMn7mOrWnshM-639D35VO2RXLGOMJdR4UJDkNQVe9nvscpWWKA=s256",
+		playStoreUrl:
+			"https://play.google.com/store/apps/details?id=application.appsku.foodcourtfestival",
+	},
+	{
+		slug: "langitpay",
+		title: "Langitpay Ecosystem",
+		tagline: "Boss Bayar PPOB, marketplace & attendance for thousands of field agents.",
+		tech: ["Java", "Kotlin", "Room", "WorkManager", "FCM", "Retrofit"],
+		highlights: [
+			"Led design and Java → Kotlin modernization of high-traffic PPOB, marketplace, and attendance apps.",
+			"Robust offline-first sync with Room + WorkManager for low-connectivity transaction continuity.",
+			"FCM push notifications for real-time field-agent operations.",
+		],
+	},
+	{
+		slug: "ppob-uberkah",
+		title: "PPOB Uberkah",
+		tagline: "PPOB payment app with Bluetooth thermal receipt printing (freelance).",
+		tech: ["Kotlin", "Bluetooth", "Retrofit", "MVVM"],
+		highlights: [
+			"Built end-to-end PPOB app with full payment API integration for pulsa, data, and bill payments.",
+			"Bluetooth thermal printer support for on-the-spot receipt generation.",
+			"Delivered as freelance engagement with PT Usaha Bersama Kami (Uberkah).",
 		],
 	},
 	{
