@@ -80,7 +80,8 @@ export const projects: Project[] = [
 	{
 		slug: "aku-mpos-vending",
 		title: "Aku MPOS Vending Machine",
-		tagline: "IoT vending machine integration — hardware control, cashless payment, live inventory.",
+		tagline:
+			"IoT vending machine integration — hardware control, cashless payment, live inventory.",
 		tech: [
 			"Kotlin",
 			"IoT / Vending SDK",
@@ -191,7 +192,8 @@ export const projects: Project[] = [
 	{
 		slug: "langitpay",
 		title: "Langitpay Ecosystem",
-		tagline: "Boss Bayar PPOB, marketplace & attendance for thousands of field agents.",
+		tagline:
+			"Boss Bayar PPOB, marketplace & attendance for thousands of field agents.",
 		tech: ["Java", "Kotlin", "Room", "WorkManager", "FCM", "Retrofit"],
 		highlights: [
 			"Led design and Java → Kotlin modernization of high-traffic PPOB, marketplace, and attendance apps.",
@@ -202,7 +204,8 @@ export const projects: Project[] = [
 	{
 		slug: "ppob-uberkah",
 		title: "PPOB Uberkah",
-		tagline: "PPOB payment app with Bluetooth thermal receipt printing (freelance).",
+		tagline:
+			"PPOB payment app with Bluetooth thermal receipt printing (freelance).",
 		tech: ["Kotlin", "Bluetooth", "Retrofit", "MVVM"],
 		highlights: [
 			"Built end-to-end PPOB app with full payment API integration for pulsa, data, and bill payments.",
