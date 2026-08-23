@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# tooling
+.pi
+.pi-lens
+
+# sensitive / personal assets — deploy manually to VPS
+public/*.pdf

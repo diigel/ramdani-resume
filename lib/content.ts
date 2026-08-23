@@ -3,7 +3,6 @@ export const profile = {
 	headline: "Mobile Developer — Android · Flutter · IoT",
 	location: "Sawangan, Depok, Indonesia",
 	email: "dhani.digel@gmail.com",
-	phone: "+62 8588-3477-759",
 	github: "https://github.com/diigel",
 	linkedin: "https://linkedin.com/in/muhammad-ramdani-769b891a0",
 	cvUrl: "/Muhammad_Ramdani_CV_2026_En.pdf",
