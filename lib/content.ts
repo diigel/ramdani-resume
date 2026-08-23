@@ -202,15 +202,19 @@ export const projects: Project[] = [
 		],
 	},
 	{
-		slug: "ppob-uberkah",
-		title: "PPOB Uberkah",
+		slug: "eureka",
+		title: "Eureka — PPOB Agent",
 		tagline:
-			"PPOB payment app with Bluetooth thermal receipt printing (freelance).",
+			"Pulsa, data & PPOB agent app with Bluetooth thermal printing (PT Usaha Bersama Kami).",
 		tech: ["Kotlin", "Bluetooth", "Retrofit", "MVVM"],
+		image:
+			"https://play-lh.googleusercontent.com/m8viZriXHlwAhKHDoa6LOfkSnxDNChDDrJlIUbG9S2udYOJu6YjxSazn-Ff2GfwavDRLLw-BpUuqxK0IuYcK-A=s256",
+		playStoreUrl:
+			"https://play.google.com/store/apps/details?id=id.eureka.android",
 		highlights: [
-			"Built end-to-end PPOB app with full payment API integration for pulsa, data, and bill payments.",
-			"Bluetooth thermal printer support for on-the-spot receipt generation.",
-			"Delivered as freelance engagement with PT Usaha Bersama Kami (Uberkah).",
+			"Built end-to-end PPOB app covering pulsa, data, PLN, BPJS, e-money top-up, and postpaid bills.",
+			"Bluetooth thermal printer integration for on-the-spot agent receipt generation.",
+			"Delivered as freelance engagement for PT Usaha Bersama Kami — live on Play Store with 1K+ installs.",
 		],
 	},
 	{
